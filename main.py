@@ -15,3 +15,7 @@ climber.add()
 
 for row, list in enumerate(climber.get()):
     print(row, ' - ', list)
+
+
+
+1

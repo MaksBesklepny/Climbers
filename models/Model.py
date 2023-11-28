@@ -47,3 +47,6 @@ class Model:
             connection().commit()
             connection().close()
             print("Запись обновлена")
+
+
+1
