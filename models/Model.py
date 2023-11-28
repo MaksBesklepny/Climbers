@@ -47,7 +47,3 @@ class Model:
             connection().commit()
             connection().close()
             print("Запись обновлена")
-
-
-
-#манюня
