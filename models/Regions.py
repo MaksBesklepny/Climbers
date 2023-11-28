@@ -1,8 +1,10 @@
 from  models.Model import Model
-class Climbers(Model):
-    __nameTable = 'Climbers'
-    __name = 'name'
-    __address = 'address'
+class Regions(Model):
+    __nameTable = 'Regons'
+    __id = 'id'
+    __country = 'country'
+    __region = 'region'
+
     def get(self):
         return super().get(self.__nameTable)
     def get_oneStroke(self, id):
@@ -10,10 +12,10 @@ class Climbers(Model):
     def get_oneField(self, field):
         return super().get_oneField(self.__nameTable, field)
     def add(self):
-        name = input("Введите имя")
-        address = input("Введите адрес")
-        str = f"{self.__name}, {self.__address}"
-        super().add(self.__nameTable, str, name, address)
+        country = input("Введите страну")
+        region = input("Введите регион")
+        str = f"{self.__country} , {self.__region}"
+        super().add(self.__nameTable, str, country, region)
 
     def delete(self, id):
         super().delete(self.__nameTable, id)
@@ -23,3 +25,4 @@ class Climbers(Model):
         field = input("Введите название поля")
         values = input("Введите новое значение")
         super().update(self.__nameTable,id,field,values)
+

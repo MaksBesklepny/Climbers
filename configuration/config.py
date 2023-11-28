@@ -10,5 +10,3 @@ def connection():
         database='rybin_Climbers',
         cursorclass=DictCursor
     )
-
-1

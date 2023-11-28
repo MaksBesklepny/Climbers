@@ -25,8 +25,8 @@ class Model:
 
     def add(self, table, str, *values):
         with connection().cursor() as cursor:
-            print(f"INSERT INTO {table} ({str}) VALUES ({values})")
-            query = f"INSERT INTO {table} ({str}) VALUES ({values})"
+            print(f"INSERT INTO {table} ({str}) VALUES {values}")
+            query = f"INSERT INTO {table} ({str}) VALUES {values}"
             cursor.execute(query)
             connection().close()
             print(f"Новая запись в таблицу {table} добавлена")
@@ -47,6 +47,3 @@ class Model:
             connection().commit()
             connection().close()
             print("Запись обновлена")
-
-
-1
