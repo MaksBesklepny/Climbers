@@ -48,5 +48,3 @@ class Model:
             connection().close()
             print("Запись обновлена")
 
-
-1
