@@ -1,8 +1,6 @@
-from datetime import datetime
-
 from  models.Model import Model
 
-class Mountains(Model):
+class Ascents(Model):
     __nameTable = 'Ascents'
     __id = 'id'
     __name = 'name'
